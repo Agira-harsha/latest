@@ -1,0 +1,56 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+    <link rel="stylesheet" href="calcy.css">
+</head>
+<body>
+    <div class="display">
+        
+         <div class="enter">
+            <input type="text" id="box" value="" >
+         </div>
+         <div class="buttons">
+             <button class="red" onclick="remove()">AC</button>
+             <button onclick="minus()" class="red">Del</button>
+             <button onclick="display('(')">(</button>
+             <button onclick="display(')')">)</button>
+             <button  onclick="logo()" class="off" id="on">ON</button>     
+        </div>
+        <br>
+        <div class="buttons">
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>   
+            <button onclick="display('9')">9</button>
+            <button onclick="display('/')">/</button>
+            <button onclick="multi()" id="multiplication">x&sup2;</button>
+       </div>
+       <br>
+        <div class="buttons">
+          <button onclick="display('4')">4</button>
+          <button onclick="display('5')">5</button>
+          <button onclick="display('6')">6</button>
+          <button onclick="display('*')">*</button> 
+          <button onclick="fact()" id="fact">!</button>
+       </div>
+       <br>
+       <div class="side">
+        <button onclick="display('1')">1</button>
+        <button onclick="display('2')">2</button>
+        <button onclick="display('3')">3</button>
+        <button onclick="display('+')">+</button>
+        <button id="new" onclick="validation()">=</button>
+      </div>
+       <br>
+       <div class="button">
+        <button  class="button1" onclick="display('.')">.</button>
+        <button  class="button1" onclick="display('0')">0</button>
+        <button  class="button1" onclick="display('%')">%</button>
+        <button  class="button1" onclick="display('-')">-</button>
+       </div>
+ </div>
+<script src="calcy.js"></script>
+</body>
+</html>
